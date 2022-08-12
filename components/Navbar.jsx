@@ -31,6 +31,9 @@ const Navbar = () => {
             <Link href='/city'>
                 <div><b>City Page</b></div>
             </Link>
+            <Link href="/UserForm">
+                <div><b>User Form</b></div>
+            </Link>
             <div className={styles.navImg}>
                 <Image src={profile} alt='profile' />
             </div>
