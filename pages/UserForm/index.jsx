@@ -9,7 +9,7 @@ import { Box } from '@mui/system'
 
 
 
-const index = () => {
+const Index = () => {
 
     const { control, handleSubmit, formState: { errors } } = useForm()
 
@@ -38,7 +38,7 @@ const index = () => {
                                     id="standard-basic"
                                     label="First Name"
                                     variant="standard"
-                                    fullWidth 
+                                    fullWidth
                                 />
                             }
                         />
@@ -57,7 +57,7 @@ const index = () => {
                                     id="standard-basic"
                                     label="Last Name"
                                     variant="standard"
-                                    fullWidth 
+                                    fullWidth
                                     placeholder={errors.name?.message}
                                 />
                             }
@@ -77,7 +77,7 @@ const index = () => {
                                     id="standard-basic"
                                     label="Email"
                                     variant="standard"
-                                    fullWidth 
+                                    fullWidth
                                 // placeholder={errors.email?.message}
                                 />
                             }
@@ -98,7 +98,7 @@ const index = () => {
                                     label="Password"
                                     type='password'
                                     variant="standard"
-                                    fullWidth 
+                                    fullWidth
                                 />
                             }
                         />
@@ -119,4 +119,4 @@ const index = () => {
     )
 }
 
-export default index;
+export default Index;
