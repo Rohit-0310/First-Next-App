@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "../../styles/userform.module.scss"
+import Head from 'next/head'
 import Navbar from '../../components/Navbar'
 
 
@@ -21,6 +22,9 @@ const Index = () => {
 
     return (
         <>
+        <Head>
+            <title>User Form</title>
+        </Head>
             <Navbar />
             <div className={styles.formTop}>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -43,7 +47,8 @@ const Index = () => {
                             }
                         />
                         {/* <p>{errors.firstName?.message}</p> */}
-                        <Alert severity="warning">{errors.firstName?.message}</Alert>
+                        {errors?
+                        <Alert severity="warning">{errors.firstName?.message}</Alert>:null}
 
 
                         <Controller

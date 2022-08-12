@@ -1,9 +1,10 @@
 import styles from "../../styles/news.module.scss"
 import Navbar from '../../components/Navbar';
+import Head from 'next/head'
 import Image from 'next/image'
 
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
     const res = await fetch("https://daily-news-network-nestjs.herokuapp.com/api/v1/inshorts/hi/sportNews");
     const data = await res.json();
     return {
@@ -16,18 +17,18 @@ export const getServerSideProps = async () => {
 const index = ({ data }) => {
 
 
-
-
     return (
         <div>
-            {/* <title>Sports News in Hindi</title> */}
+            <Head>
+                <title>Sports News | Hindi</title>
+            </Head>
             <Navbar />
             <div className={styles.newsTop}>
                 {/* <h1 style={{ textAlign: 'center' }}>Sports News</h1> */}
                 <div>{
-                    data.map((e) => {
+                    data.map((e, i) => {
                         return (
-                            <div key={e.id} className={styles.flexImg}>
+                            <div key={i} className={styles.flexImg}>
                                 <div>
                                     <picture className={styles.newsImg}>
                                         <img
