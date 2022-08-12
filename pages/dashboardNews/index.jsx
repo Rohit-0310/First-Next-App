@@ -1,4 +1,4 @@
-import styles from "../../styles/news.module.css"
+import styles from "../../styles/news.module.scss"
 import Navbar from '../../components/Navbar';
 import Image from 'next/image'
 
