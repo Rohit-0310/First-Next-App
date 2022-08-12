@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar';
-import styles from '../../styles/Car.module.css';
+import styles from '../../styles/Car.module.scss';
 
 
 function CarsList() {

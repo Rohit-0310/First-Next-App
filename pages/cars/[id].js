@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Navbar from '../../components/Navbar';
-import styles from '../../styles/Car.module.css';
+import styles from '../../styles/Car.module.scss';
 
 
 function Car() {
