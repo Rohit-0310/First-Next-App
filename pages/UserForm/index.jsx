@@ -89,7 +89,7 @@ const Index = () => {
                         <Controller
                             name="password"
                             control={control}
-                            rules={{ required: true }}
+                            rules={{ required: "Password is Required" }}
                             render={({ field }) =>
                                 <TextField
                                     {...field}
