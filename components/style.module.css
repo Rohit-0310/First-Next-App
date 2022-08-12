@@ -1,0 +1,21 @@
+.topNav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 25px;
+    border: 1px dotted red;
+    border-radius: 15px 50px; 
+    padding: 20px 0;
+}
+
+.topNav > div{
+    cursor: pointer;
+}
+.navImg{
+    border: 1px solid red;
+    width: 25px;
+    height: 25px;
+}
+
+.navImg >Image{
+    border-radius: 50%;
+}

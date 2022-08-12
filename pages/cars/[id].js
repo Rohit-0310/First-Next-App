@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Navbar from '../../components/Navbar';
 import styles from '../../styles/Car.module.css';
 
 
@@ -7,6 +8,7 @@ function Car() {
     const {id} = router.query
     return (
         <>
+        <Navbar />
         <div className={styles.main}>
 
             <h2>Car Name:- {id}</h2>
