@@ -1,4 +1,4 @@
-import styles from './style.module.css'
+import styles from './style.module.scss'
 import profile from "../public/Image/profile.JPG"
 import Link from 'next/link'
 import Image from 'next/image'
