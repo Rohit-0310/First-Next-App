@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import styles from '../../styles/Car.module.css';
 
 
 function Car() {
@@ -6,7 +7,7 @@ function Car() {
     const {id} = router.query
     return (
         <>
-        <div>
+        <div className={styles.main}>
 
             <h2>Car Name:- {id}</h2>
         </div>
